@@ -1,0 +1,25 @@
+Szanowni Państwo, 
+
+Na następne zajęcia proszę zrealizować algorytm szeregowania dzielący procesy użytkownika na grupy: A, B. 
+Zakłada się, że proces jest umieszczony w grupie:
+A - gdy jego identyfikator procesu jest podzielny bez reszty przez 2, 
+B - gdy jego identyfikator procesu nie jest podzielny bez reszty przez 2.
+
+Wykonać niezbędne modyfikacje funkcji systemowych umożliwiającą przenoszenie 
+procesów pomiędzy powyższymi grupami.
+
+Proszę także wykonać usługę systemową o prototypie:
+
+int set_scheduler(int x);
+
+Która ustala proporcje czasowe w jakich scheduler ma wybierać do wykonania między zadaniami z grupy A i B. 
+Argument x może przyjmować wartości 0...100, i oznacza on ile procent czasu dostanie zadanie A (zadanie B dostanie odpowiednio 100-x procent czasu).
+
+Usługa ma zwracać 0 gdy udało się wykonać zmianę proporcji czasowych, gdy zwróci -1, oznaczać będzie, że proces wywołujący tę usługę został przydzielony do klasy B i procesom tej klasy nie wolno zmieniać proporcji. 
+
+Opracować również klarowną i powtarzalną metodę weryfikacji poprawności rozwiązania (np.: za pomocą aplikacji testowych).
+
+Na wstępie następnych zajęć po wejściówce, każdy student będzie prezentował swoją koncepcję rozwiązania.
+
+Z poważaniem 
+Aleksander Pruszkowski 
